@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+} 
+
+.navbar{
+    /* background: url('sea background.jpg'); */
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+.logo{
+    display: inline;
+}
+.imglogo{
+    clip-path: circle();
+    margin-bottom: 11px;
+    width: 65px;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.navlist{
+    float: right;
+    margin-top: 27px;
+}
+.navlist .item{
+    list-style: none;
+    display: inline;
+    margin-right: 43px;
+}
+.navlist .item a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: all ease 0.5s;
+    color: white;
+}
+.navlist .item a:hover{
+    color: rgb(89, 108, 119);
+}
+#home{
+    background: url('sea background.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 337px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 11rem;
+    padding-bottom: 7rem;
+}
+.head{
+    font-size: 38px;
+}
+.para{
+    font-size: 20px;
+}
+.img{
+    width: 182px;
+    clip-path: circle();
+}
+#services{
+    padding-top: 9rem;
+}
+.serve{
+    text-align: center;
+    font-size: 33px;
+
+}
+.thumbright{
+    margin-right: 73px;
+}
+.thumb{
+    width: 220px;
+    border: solid 2px black;
+    border-radius: 7px;
+    margin-left: 73px;
+}
+.services1{
+    display: flex;
+    margin-top: 41px;
+}
+.serve2{
+    padding-bottom: 20px;
+}
+#div1{
+    margin-left: 82px;
+}
+.sec{
+    display: flex;
+    margin-top: 41px;
+    flex-direction: row-reverse;
+}
+#about{
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.aboutlogo{
+    width: 162px;
+    margin-top: 18px;
+    clip-path: circle();
+}
+.lorem{
+    font-size: 33px;
+}
+.abouttitle{
+    font-size: 36px;
+    margin-top: 17px;
+    margin-bottom: 26px;
+}
+.para3{
+    margin-left: 215px;
+    font-size: 17px;
+    margin-right: 215px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+}
+.form{
+    margin-top: 20px;
+}
+.form-entry{
+    margin-bottom: 12px;
+    text-align: center;
+    border: 2px solid black;
+    width: 283px;
+    height: 26px;
+    border-radius: 7px;
+}
+.line{
+    width: 34px;
+    height: 6px;
+    background: white;
+    margin-bottom: 3px;
+}
+#burgur{
+    display: none;
+}
+.menu{
+    display: none;
+}
+@media (max-width: 900px){
+
+    .navlist .item {
+        display: none;
+        margin-right: 0;
+        margin-top: 17px;                                                                                 
+        text-align: center;
+    }
+    .navlist{
+        margin-top: 0;
+    }
+    #burgur{
+        display: none;
+    }
+    nav .menu i{
+        display: block;
+        color: white;
+        font-size: 29px;
+    }
+    #burgur:checked ~ .menu i:before{
+        content: "\f00d";
+    }  
+    #burgur:checked ~ .navlist{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #burgur:checked ~ .navlist .item{
+        display: block;
+    }
+    #burgur:checked ~ .navbar{
+        height: 279px;
+    }
+    .menu{
+        float: right;
+        display: block;
+        margin-top: 23px;
+        margin-right: 26px;
+    }
+    #burgur~:checked.navlist{
+        display: inline-flex;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        top: -48px;
+    }
+    .services1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .thumb{
+        margin-left: 0;
+    }
+    #div1{
+        margin-left: 0;
+    }
+    .serve2 {
+        margin-top: 17px;
+    }
+    .thumbright{
+        margin-right: 0;
+    }
+    .para3 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .imglogo {
+        margin-left: 0;
+    }
+    .logo {
+        display: inline;
+        margin-left: 15px;
+    }
+
+}
